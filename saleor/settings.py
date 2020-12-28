@@ -58,7 +58,7 @@ if not ALLOWED_CLIENT_HOSTS:
         )
 
 ALLOWED_CLIENT_HOSTS = get_list(ALLOWED_CLIENT_HOSTS)
-
+ALLOWED_HOSTS = 'e2kan.herokuapp.com'
 INTERNAL_IPS = get_list(os.environ.get("INTERNAL_IPS", "https://e2kan.herokuapp.com/"))
 
 DATABASES = {
